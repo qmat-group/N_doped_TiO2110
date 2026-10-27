@@ -1,0 +1,42 @@
+&CONTROL
+  calculation = 'relax'
+  etot_conv_thr =   1.6200000000d-03
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'aiida'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+/
+&SYSTEM
+  degauss =   1.4699723600d-02
+  ecutrho =   4.8000000000d+02
+  ecutwfc =   6.0000000000d+01
+  ibrav = 0
+  nat = 2
+  nosym = .false.
+  ntyp = 1
+  nspin = 2
+  starting_magnetization(1) = 0.5
+  occupations = 'smearing'
+  smearing = 'cold'
+/
+&ELECTRONS
+  conv_thr =   3.2400000000d-08
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+  scf_must_converge = .false.
+/
+&IONS
+/
+ATOMIC_SPECIES
+N      14.0067 N_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS angstrom
+N 0.0 0.0 0.0 
+N 1.0 1.0 1.0 
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+     35.3906000000       0.0000000000       0.0000000000
+      0.0000000000      35.3906000000       0.0000000000
+      0.0000000000       0.0000000000      35.3906000000
